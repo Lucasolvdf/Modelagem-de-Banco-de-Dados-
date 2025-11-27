@@ -1,0 +1,34 @@
+DER
+	Motorista
+Atributos:
+ID_motorista → Chave primária
+nome
+telefone 
+
+	Estacionamento
+Atributos:
+ID_estacionamento - Chave primária 
+nome
+endereço - local da vaga
+
+	  Vaga
+	Atributos:
+	ID_vaga → Chave primária 
+	número → Número identificador da vaga.
+	estado -> Ocupada, livre, reservada
+
+
+                  Relacionamento
+Motorista e Estacionamento.
+
+Um motorista pode gerenciar vários estacionamentos, mas cada estacionamento é gerenciado por um único motorista.
+
+1 motorista → N estacionamento
+
+	Estacionamento e Vaga.
+Um estacionamento possui várias vagas, e cada vaga pertence a um único estacionamento.
+1 estacionamento → N vagas
+
+Um motorista 1 gerencia vários estacionamentos N
+
+cada estacionamento 1 possui várias vagas N.
